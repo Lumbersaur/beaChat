@@ -10,5 +10,20 @@ html {
     left: 0;
     background-color: lightsalmon;
     overflow-x: hidden; 
-    padding-top: 60px; 
+    padding-top: 30px; 
+}
+h2 {
+    font-family: cursive, sans-serif;
+    color: azure;
+    text-align: center;
+    padding-bottom: 20px;
+}
+[ng-cloak] {
+    display: none;
+}
+.rooms {
+    font-size: 20px;
+    font-family: fantasy;
+    color: wheat;
+    text-align: center;
 }
