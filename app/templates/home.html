@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+    <div class="sideNav" ng-controller = "sideBarController">
+        <h2>beaChat</h2>
+        <div ng-repeat="key in roomList">
+            <p ng-cloak class="rooms">{{key.$value}}</p>
+        </div>
+    </div>

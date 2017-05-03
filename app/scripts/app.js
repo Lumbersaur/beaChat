@@ -1,14 +1,22 @@
-angular.module('blocChat', ['firebase', 'ui.router'])
-    .config(['$stateProvider', function ($stateProvider) {
-        var home = {
-                name: 'home',
-                url: '/',
-                templateUrl: 'index.html'
-            };
-        $stateProvider.state(home);  
-    }])
-    .run(['$state', function ($state) {
-        $state.transitionTo('home');
-    }]);
+(function() {
+    function config($locationProvider, $stateProvider) {
+         $locationProvider
+             .html5Mode({
+                 enabled: true,
+                 requireBase: false
+              });
+ 
+         $stateProvider
+             .state('home', {
+                 url: '/',
+                 controller: 'HomeCtrl as home',
+                 templateUrl: '/templates/home.html'
+             });
+     }
+    
+     angular
+        .module('blocChat', ['firebase', 'ui.router'])
+        .config(config);
+})();
 
 
