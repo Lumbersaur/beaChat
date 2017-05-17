@@ -2,13 +2,16 @@
 <html ng-app="blocChat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Chat</title>
+    <title>beaChat</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <ui-view></ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <!-- AngularUI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
     <script>
@@ -25,6 +28,8 @@
     </script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/room.js"></script>
+    <script src="scripts/controllers/sidebarController.js"></script>
+    <script src="scripts/controllers/newRoomController.js"></script>
     <script src="scripts/controllers/HomeCtrl.js"></script>
 </body>
 </html>

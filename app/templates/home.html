@@ -4,4 +4,22 @@
         <div ng-repeat="key in roomList">
             <p ng-cloak class="rooms">{{key.$value}}</p>
         </div>
+        <div class = 'buttonParent' ng-controller = "newRoomController">
+            <button type="button" class="btn btn-block newRoomBtn"  ng-click="getModal()">Add New Room</button>
+        </div>
+    </div>
+ 
+    <!-- Modal Popup -->
+
+    <div class="modal" id="newRoomModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">What's the Word?</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Name your Chatroom.</p>
+                </div>
+            </div>
+        </div>
     </div>
